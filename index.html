@@ -9,7 +9,7 @@
   <body>
     <header>
       <div class="container">
-        <a href="#">Katik</a>
+        <a href="">Katik</a>
         <a href="#" onclick="luas()"> Luas Segitiga </a>
         <a href="#" onclick="keliling()"> Keliling Segitiga </a>
       </div>
@@ -17,11 +17,71 @@
     <main>
       <div id="luas">
         <h2>Luas segitiga</h2>
-        <img src="assets/2008777398.jpg" width="50%" alt="" />
+        <img src="assets/2008777398.jpg" width="30%" alt="" />
+        <div id="kalkulasi">
+          <form>
+            <label for="alas">Alas</label>
+            <input
+              onkeypress="return event.which != 32"
+              type="text"
+              id="alas"
+              name="firstname"
+            />
+            <label for="tinggi">Tinggi</label>
+            <input
+              onkeypress="return event.which != 32"
+              type="text"
+              id="tinggi"
+              name="lastname"
+            />
+            <input type="button" onclick="hasil()" value="Submit" />
+            <input type="reset" onclick="retry()" value="Reset" />
+          </form>
+        </div>
+        <div id="result">
+          <h3>Rumus Luas Segitiga</h3>
+          <p>L=alas*tinggi/2</p>
+          <p>L= <span id="resa"></span>*<span id="rest"></span>/2</p>
+          <p>L= <span id="ls"></span></p>
+        </div>
       </div>
       <div id="kll">
         <h2>Keliling segitiga</h2>
-        <img src="assets/2008777398.jpg" width="50%" alt="" />
+        <img src="assets/2008777398.jpg" width="30%" alt="" />
+        <div id="kalkulasi">
+          <form>
+            <label for="sisi">Sisi 1</label>
+            <input
+              onkeypress="return event.which != 32"
+              type="text"
+              id="sisi"
+              name="firstname"
+            />
+            <label for="sisi2">Sisi 2</label>
+            <input
+              onkeypress="return event.which != 32"
+              type="text"
+              id="sisi2"
+              name="lastname"
+            />
+            <label for="sisi3">Sisi 3</label>
+            <input
+              onkeypress="return event.which != 32"
+              type="text"
+              id="sisi3"
+              name="lastname"
+            />
+            <input type="button" onclick="hasil2()" value="Submit" />
+            <input type="reset" onclick="retry()" value="Reset" />
+          </form>
+        </div>
+        <div id="result2">
+          <h3>Rumus Keliling Segitiga</h3>
+          <p>Kll=S + S + S</p>
+          <p>Kll= <span id="s1"></span>+<span id="s2"></span>+ <span id="s3"></span></p>
+          <p>Kll= <span id="kl"></span></p>
+        </div>
+      </div>
       </div>
     </main>
     <script src="/25-dec-23-Alcadeius/js/script.js"></script>
